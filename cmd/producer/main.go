@@ -62,8 +62,6 @@ func DeliveryProduce(deliveryChan chan kafka.Event) {
 				fmt.Println("Erro ao enviar")
 			} else {
 				fmt.Println("Mensagem enviada:", ev.TopicPartition)
-				// anotar no banco de dados que a mensagem foi processado.
-				// ex: confirma que uma transferencia bancaria ocorreu.
 			}
 		}
 	}
